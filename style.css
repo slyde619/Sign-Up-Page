@@ -6,19 +6,31 @@
 }
 
 body{
-    
-    background: #072c6d;
     line-height: 1.8;
     font-family: 'Segoe UI', sans-serif;
+    Insert this in your body:
+    background-image:
+         url(img/data1.png),
+         url(img/data2.png),
+         url(img/anc_purple.png),
+         url(img/anc_pink.png);
+    background-position:
+         top -80px left -10px,
+         top -20px right -90px,
+         bottom -30px right -70px,
+         bottom -70px left -32px;
+     background-repeat: no-repeat;
+     background-attachment: fixed;
+     background-size: 150px;
+     background-attachment: fixed;
+     background-color:  #072c6d;
+
 }
 
 a{
     text-decoration: none;
 }
 
-.icon-holder{
-    position: relative;
-}
 
 #container{
     max-width: 529px;
@@ -26,55 +38,6 @@ a{
     padding: 50px;
     
 }
-
-.bg-icons img{
-    display: inline;
-    height: 200px;
-    max-width: auto;
-    
-}
-
-.bg-icons img:first-child{
-    position: absolute;
-    top:-60px;
-    left: -10px;
-    
-    
-}
-
-.bg-icons img:last-child{
-    position: absolute;
-    right: -97px;
-    top: -4px;
-}
-
-.bg-icons-footer img{
-    position: relative;
-    display: inline;
-    height: 200px;
-    width: auto;
-}
-
-.bg-icons-footer .icon-3{
-    position: absolute;
-    
-    bottom: 328px;
-    left: -85px;
-    
-}
-
-.bg-icons-footer .icon-4{
-    position: absolute;
-    right: -65px;
-    bottom: 345px;
-    height: 200px;
-}
-
-.bg-icons-footer .icon-4::after{
-    content: '';
-    position: fixed;
-}
-
 
 #container a img{
     display: block;
